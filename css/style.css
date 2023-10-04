@@ -1,0 +1,73 @@
+/* COLORS  */
+:root {
+  --bg: #222325;
+  --white: #d1d3d7;
+  --primary: #339af0;
+  --grey: #323639;
+}
+
+/* HEADER  */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 9rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-family: "Telma", cursive;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.logo:hover {
+  color: var(--primary);
+}
+
+.navbar-menu li {
+  display: inline-block;
+  margin-right: 4rem;
+}
+
+.navbar-menu li a {
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+.header-btns-box {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.header-btns-box .contact-btn {
+  padding: 0.1rem 1.5rem;
+}
+
+.dark-mode-btn {
+  font-size: 2.6rem;
+  background: none;
+  display: flex;
+}
+
+.dark-mode-btn ion-icon {
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--white);
+  padding: 0.8rem;
+}
+
+.dark-mode-btn ion-icon:hover {
+  background-color: #323639;
+  color: var(--primary);
+}
+
+.dark-mode-btn [name="moon-outline"] {
+  display: none;
+}
